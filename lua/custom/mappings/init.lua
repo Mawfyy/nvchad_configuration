@@ -4,7 +4,9 @@ M.normally = {
   n = {
     ["<leader>w"] = {":w <CR>"},
     ["<leader>e"] = {":NvimTreeToggle <CR>"},
-    ["<leader>q"] = {":q <CR>"}
+    ["<leader>q"] = {":wq! <CR>"},
+    ["<leader>h"] = {":split <CR>"},
+     ["<leader>v"] = {":vsplit <CR> "},
   }
 }
 

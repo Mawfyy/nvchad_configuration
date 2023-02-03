@@ -2,6 +2,9 @@ local opt = vim.opt
 local g = vim.g
 local config = require("core.utils").load_config()
 
+--Configs vim
+vim.cmd('set noswapfile')
+
 g.nvchad_theme = config.ui.theme
 g.toggle_theme_icon = "   "
 g.transparency = config.ui.transparency
@@ -19,7 +22,6 @@ opt.shiftwidth = 2
 opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
-
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
@@ -29,7 +31,7 @@ opt.mouse = "a"
 opt.number = true
 opt.numberwidth = 2
 opt.ruler = false
-
+opt.rnu = true
 -- disable nvim intro
 opt.shortmess:append "sI"
 
